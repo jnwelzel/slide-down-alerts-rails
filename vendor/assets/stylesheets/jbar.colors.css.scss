@@ -1,0 +1,32 @@
+$notificationBgColor: #FFF;
+$notificationColor: #1E90FF;
+$notificationBorderColor: #EBEBEB;
+
+$warningBgColor: #FCF8E3;
+$warningColor: #C09853;
+$warningBorderColor: #FBEED5;
+
+$errorBgColor: #F2DEDE;
+$errorColor: #B94A48;
+$errorBorderColor: #EED3D7;
+
+.notification
+{
+	background-color: $notificationBgColor;
+	color: $notificationColor;
+	border-bottom: 1px solid $notificationBorderColor;
+}
+
+.notification.warning
+{
+	background-color: $warningBgColor;
+	color: $warningColor;
+	border-bottom: 1px solid $warningBorderColor;
+}
+
+.notification.error
+{
+	background-color: $errorBgColor;
+	color: $errorColor;
+	border-bottom: 1px solid $errorBorderColor;
+}
