@@ -1,6 +1,6 @@
-# Slide::Down::Alerts::Rails
+# slide-down-alerts-rails (still under development)
 
-TODO: Write a gem description
+Rails notifications Twitter-style
 
 ## Installation
 
@@ -18,7 +18,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+<code><%= slide_down_alerts %></code> inside your views
 
 ## Contributing
 
