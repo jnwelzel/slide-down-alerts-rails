@@ -13,14 +13,9 @@ $(function($) {
     }
 
     // jbartimeout = setTimeout('$.removebar()', options.time);
-    var _message_span = $(document.createElement('span')).addClass(
-        'jbar-content').html(options.message);
+    var _message_span = $(document.createElement('span')).addClass('jbar-content').html(options.message);
     var _wrap_bar;
-    (options.position == 'bottom') ? _wrap_bar = $(
-        document.createElement('div')).addClass('jbar jbar-bottom')
-        : _wrap_bar = $(document.createElement('div'))
-            .addClass('jbar jbar-top');
-
+    (options.position == 'bottom') ? _wrap_bar = $(document.createElement('div')).addClass('jbar jbar-bottom') : _wrap_bar = $(document.createElement('div')).addClass('jbar jbar-top');
     _wrap_bar.addClass("notification");
     if (options.useClass != undefined)
       _wrap_bar.addClass(options.useClass);
@@ -38,8 +33,7 @@ $(function($) {
         $.removebar();
       })
     }
-    _wrap_bar.append(_message_span).append(_remove_cross).hide().insertBefore(
-        $('.content')).fadeIn('fast');
+    _wrap_bar.append(_message_span).append(_remove_cross).hide().insertBefore($('.content')).fadeIn('fast');
     $('body').append(_wrap_bar);
     _wrap_bar.css({
       "display" : "block"
