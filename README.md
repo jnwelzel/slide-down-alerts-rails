@@ -22,7 +22,8 @@ After that it's time to import the CSS by adding <code>require jbar.colors</code
 
 ## Usage
 
-<code><%= slide_down_alerts %></code> inside your views and you're good to go. Whenever there is something related to <code>notice</code>, <code>alert</code> or <code>error</code> in the <code>flash</code> scope it will be shown in a nice-looking-down-sliding notification. Check it out
+Add this view helper <code><%= slide_down_alerts %></code> to your application layout and you're good to go. Whenever there is something related to <code>notice</code>, <code>alert</code> or <code>error</code> in the <code>flash</code> scope it will be shown in a nice-looking-down-sliding notification. Check it out!
+![ScreenShot](https://raw.github.com/jnwelzel/slide-down-alerts-rails/master/example.png)
 
 ## Contributing
 
