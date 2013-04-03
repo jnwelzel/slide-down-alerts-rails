@@ -7,11 +7,11 @@ module Slide
           def slide_down_alerts
             if flash[:notice] || flash[:alert] || flash[:error]
               if flash[:error]
-                "<script type=\"text/javascript\">$(document).ready(function($){showError(\'#{flash[:error]}\');});</script>".html_safe
+                render :partial => "slide_down_alerts_rails/script_partial", :locals => { :method => "Error", :message => flash[:error] }
               elsif flash[:notice]
-                "<script type=\"text/javascript\">$(document).ready(function($){showNotification(\'#{flash[:notice]}\');});</script>".html_safe
+                render :partial => "slide_down_alerts_rails/script_partial", :locals => { :method => "Notification", :message => flash[:notice] }
               elsif flash[:alert]
-                "<script type=\"text/javascript\">$(document).ready(function($){showWarning(\'#{flash[:alert]}\');});</script>".html_safe
+                render :partial => "slide_down_alerts_rails/script_partial", :locals => { :method => "Warning", :message => flash[:alert] }
               end
             end
           end
