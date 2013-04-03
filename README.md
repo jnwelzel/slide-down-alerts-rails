@@ -1,4 +1,4 @@
-# slide-down-alerts-rails (still under development)
+# slide-down-alerts-rails
 
 Rails notifications Twitter-style
 
